@@ -38,7 +38,7 @@ CREATE TABLE `admindetail` (
 --
 
 INSERT INTO `admindetail` (`email`, `password`) VALUES
-('sachinjangid774@gmail.com', 'sachin123');
+('sachinjangid4@gmail.com', 'sachin123');
 
 -- --------------------------------------------------------
 
@@ -118,8 +118,8 @@ CREATE TABLE `interest` (
 --
 
 INSERT INTO `interest` (`email`, `interest`) VALUES
-('sachinjangid832@gmail.com', 'JAVA'),
-('sachinjangid832@gmail.com', 'PYTHON');
+('sachinjangid8@gmail.com', 'JAVA'),
+('sachinjangid8@gmail.com', 'PYTHON');
 
 -- --------------------------------------------------------
 
@@ -138,7 +138,7 @@ CREATE TABLE `qnupvote` (
 --
 
 INSERT INTO `qnupvote` (`qncode`, `upvote`, `user`) VALUES
-('EFLOT179', 0, 'sachinjangid832@gmail.com');
+('EFLOT179', 0, 'sachinjangid8@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -220,7 +220,7 @@ CREATE TABLE `record` (
 --
 
 INSERT INTO `record` (`sn`, `name`, `email`, `mobile`, `password`, `warning`, `status`) VALUES
-(1, 'Sachin Jangid', 'sachinjangid832@gmail.com', '87646876464', 'sachin123', 0, 0);
+(1, 'Sachin Jangid', 'sachinjangid8@gmail.com', '87646876464', 'sachin123', 0, 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
