@@ -1,0 +1,54 @@
+header {
+	border-top : 3px solid #fc8200;
+	background-color: #f9f8f7;
+}
+.login a {
+	margin-left : 60px;
+	text-decoration: none;
+	display : inline-block;
+	align-items : center;
+	margin-right : 8px;
+	margin-left : -4px;
+	text-transform : uppercase;
+	text-align : center;
+	font-size : 14px;
+	padding : 10px;
+	color : blue;
+	-webkit-border-radius : 8px;
+	-moz-border-radius : 8px;
+	border-radius : 8px;
+	transition : background 0.6s ease-in-out;
+}
+.login a:hover {
+	background : #8ab2f2;
+	color :white;
+}
+.signup a {
+	text-decoration: none;
+	display : inline-block;
+	align-items : center;
+	margin-right : 8px;
+	margin-left : -4px;
+	text-align : center;
+	font-size : 14px;
+	padding : 0px;
+	color : white;
+	margin : -4px;
+	padding : -4px;
+	background : #6290db;
+	border-radius : 4px;
+	transition : background 0.6s ease-in-out;
+}
+#mid-area {
+	margin : 0px;
+	background-color : #076eff;
+	color : white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header {
+        width: 100%;
+    }
+}

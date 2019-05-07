@@ -1,0 +1,49 @@
+<?php 
+	include("db.php");
+
+	if(isset($_GET["upemail"])){
+		$email=$_GET["upemail"];
+		setcookie("user",$email,time()+36000);
+		header("location:fpage.php");
+	}
+	if(isset($_POST["inemail"])){
+		$email=$_POST["inemail"];
+		$pass=$_POST["password"];
+		$rs=mysqli_query($con,"select * from record where email='$email'");
+		if($r=mysqli_fetch_array($rs)){
+			if($r[4]==$pass){
+				if($r[6]==0){
+					setcookie("user",$email,time()+36000);
+					header("location:fpage.php");
+				}
+				else{
+					header("location:login.php?block=1");
+				}
+			}
+			else{
+				header("location:login.php?invalid=1");
+			}
+		}
+		else{
+			header("location:login.php?err=1");
+		}
+		
+	}
+	if(isset($_POST["adminemail"])){
+		$adminemail=$_POST["adminemail"];
+		$pass=$_POST["password"];
+		$rs=mysqli_query($con,"select password from admindetail where email='$adminemail'");
+		if($r=mysqli_fetch_array($rs)){
+			if($r[0]==$pass){
+				setcookie("leaduser",$adminemail,time()+36000);
+				header("location:admin.php");
+			}
+			else{
+				header("location:admin.php?invalid=1");
+			}
+		}
+		else{
+			header("location:admin.php?err=1");
+		}
+	}
+ ?>
